@@ -87,7 +87,6 @@ convert_file()
 	elif [[ "wmv" == $extension || "mov" == $extension ]]; then
 		new_file_extension=".mp4"
 	fi
-	echo $extension $new_file_extension
 	newfile=$end_directory/$basename$new_file_extension
 	if [ $preserve_structure ]; then
 		newfile=$end_directory${path#$start_directory}/$basename$new_file_extension
